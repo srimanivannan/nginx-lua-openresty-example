@@ -1,5 +1,7 @@
 ## Simple Example project with tech stack of Lua, openresty, nginx
 <br>
+Openresty by default enables event based no blocking REST apis
+<br>
 
 ## Prerequisites
   
@@ -69,7 +71,9 @@ Note: `logs/nginx.pid` will have master process id
 │   ├── error.log
 │   └── nginx.pid
 └── lua
-    └── hello.lua
+    ├── conf.lua
+    ├── hello.lua
+    └── play-with-json-data.lua
 
 ```
 Run the application with default endpoint. look at nginx.conf
@@ -121,8 +125,8 @@ opm get bungle/lua-resty-reqargs
 
 ### Documents and references
 
-[Lua_Nginx_API](https://openresty-reference.readthedocs.io/en/latest/Lua_Nginx_API/)
-[resty.reqargs module](https://ketzacoatl.github.io/posts/2017-03-03-JSON-POST-processing-in-openresty.html)
-[LUA Manual](http://www.lua.org/manual/5.1/manual.html#pdf-package.seeall)
-[nginx LUA Directives](https://openresty-reference.readthedocs.io/en/latest/Directives/#directives)
+- [Lua_Nginx_API](https://openresty-reference.readthedocs.io/en/latest/Lua_Nginx_API/)
+- [require "resty.reqargs"() module](https://ketzacoatl.github.io/posts/2017-03-03-JSON-POST-processing-in-openresty.html)
+- [LUA Manual](http://www.lua.org/manual/5.1/manual.html#pdf-package.seeall)
+- [nginx LUA Directives](https://openresty-reference.readthedocs.io/en/latest/Directives/#directives)
 
