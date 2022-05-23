@@ -1,1 +1,5 @@
 127.0.0.1 - - [22/May/2022:14:56:43 -0400] "POST /playJsonGET HTTP/1.1" 200 72 "-" "curl/7.64.1"
+127.0.0.1 - - [22/May/2022:20:12:24 -0400] "GET / HTTP/1.1" 200 92 "-" "curl/7.64.1"
+127.0.0.1 - - [22/May/2022:20:12:43 -0400] "GET /myname?arg_name=manivannan HTTP/1.1" 200 88 "-" "curl/7.64.1"
+127.0.0.1 - - [22/May/2022:20:23:34 -0400] "GET /myname?arg_name=manivannan HTTP/1.1" 200 88 "-" "curl/7.64.1"
+127.0.0.1 - - [22/May/2022:20:24:43 -0400] "GET /myname?name=manivannan HTTP/1.1" 200 89 "-" "curl/7.64.1"

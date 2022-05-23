@@ -4,6 +4,13 @@ function _Hello.greet(name)
     ngx.say("Message from hello.lua file from the greet function ", name)
 end
 
+function _Hello.greetWithQueryString()
+    -- Note: arg_<your query string name> is syntax. In this case name is the querystring 
+    -- you will have to pass
+    local name = ngx.var.arg_name or "Anonymous"
+    ngx.say("Message from hello.lua file from the greetWithQueryString function ", name)
+end
+
 function _Hello.getHardCodedJsonResponse()
     local cjson = require "cjson"
     ngx.status  = ngx.HTTP_OK

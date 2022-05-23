@@ -80,6 +80,10 @@ Run the application with default endpoint. look at nginx.conf
 ```bash
 curl 'http://127.0.0.1:8080/'
 ```
+Run the application with default endpoint /myname and querystring name=value. look at nginx.conf
+```bash
+curl 'http://127.0.0.1:8080/myname?name=manivannan'
+```
 
 Run the application with Json Request And Get That Json Response Back. look at nginx.conf
 ```bash
